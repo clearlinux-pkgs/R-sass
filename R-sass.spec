@@ -4,7 +4,7 @@
 #
 Name     : R-sass
 Version  : 0.4.5
-Release  : 12
+Release  : 13
 URL      : https://cran.r-project.org/src/contrib/sass_0.4.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/sass_0.4.5.tar.gz
 Summary  : A C/C++ implementation of a Sass compiler
@@ -23,9 +23,6 @@ BuildRequires : R-htmltools
 BuildRequires : R-rappdirs
 BuildRequires : R-rlang
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 R developers can use variables, inheritance, and functions to generate
@@ -58,10 +55,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1674578856
+export SOURCE_DATE_EPOCH=1674580328
 
 %install
-export SOURCE_DATE_EPOCH=1674578856
+export SOURCE_DATE_EPOCH=1674580328
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-sass
 cp %{_builddir}/sass/src/libsass/COPYING %{buildroot}/usr/share/package-licenses/R-sass/dc6b6d4b9ae804ab0dd95d46d148ee533bec260f || :
