@@ -4,7 +4,7 @@
 #
 Name     : R-sass
 Version  : 0.4.5
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/sass_0.4.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/sass_0.4.5.tar.gz
 Summary  : A C/C++ implementation of a Sass compiler
